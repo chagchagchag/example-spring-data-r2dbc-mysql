@@ -23,4 +23,5 @@ public class Book {
   private LocalDateTime publishedAt;
 //  @Column("sale_status") // snake case 와 camel case 가 정확히 일치하면 생략 가능
   private SaleStatus saleStatus;
+  private Long authorId;
 }
