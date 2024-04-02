@@ -1,11 +1,8 @@
 package io.chagchagchag.example.r2dbc_example.book;
 
-import io.chagchagchag.example.r2dbc_example.repository.Book;
 import io.chagchagchag.example.r2dbc_example.repository.BookDeleteRepository;
-import io.chagchagchag.example.r2dbc_example.repository.SaleStatus;
+import io.chagchagchag.example.r2dbc_example.repository.type.SaleStatus;
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.stream.Collectors;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

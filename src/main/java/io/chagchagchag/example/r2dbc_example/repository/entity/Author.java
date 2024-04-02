@@ -1,4 +1,4 @@
-package io.chagchagchag.example.r2dbc_example.repository;
+package io.chagchagchag.example.r2dbc_example.repository.entity;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

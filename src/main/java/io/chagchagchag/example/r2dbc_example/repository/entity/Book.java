@@ -1,5 +1,6 @@
-package io.chagchagchag.example.r2dbc_example.repository;
+package io.chagchagchag.example.r2dbc_example.repository.entity;
 
+import io.chagchagchag.example.r2dbc_example.repository.type.SaleStatus;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import lombok.AccessLevel;
@@ -21,5 +22,5 @@ public class Book {
 //  @Column("published_at") // snake case 와 camel case 가 정확히 일치하면 생략 가능
   private LocalDateTime publishedAt;
 //  @Column("sale_status") // snake case 와 camel case 가 정확히 일치하면 생략 가능
-  private String saleStatus;
+  private SaleStatus saleStatus;
 }

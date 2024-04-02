@@ -1,8 +1,8 @@
 package io.chagchagchag.example.r2dbc_example.book;
 
-import io.chagchagchag.example.r2dbc_example.repository.BookAuthor;
+import io.chagchagchag.example.r2dbc_example.repository.valueobject.BookAuthor;
 import io.chagchagchag.example.r2dbc_example.repository.BookQueryRepository;
-import io.chagchagchag.example.r2dbc_example.repository.SaleStatus;
+import io.chagchagchag.example.r2dbc_example.repository.type.SaleStatus;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.DisplayName;

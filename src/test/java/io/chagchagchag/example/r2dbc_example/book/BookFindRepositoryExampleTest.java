@@ -1,8 +1,8 @@
 package io.chagchagchag.example.r2dbc_example.book;
 
-import io.chagchagchag.example.r2dbc_example.repository.Book;
+import io.chagchagchag.example.r2dbc_example.repository.entity.Book;
 import io.chagchagchag.example.r2dbc_example.repository.BookFindRepository;
-import io.chagchagchag.example.r2dbc_example.repository.BookName;
+import io.chagchagchag.example.r2dbc_example.repository.valueobject.BookName;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

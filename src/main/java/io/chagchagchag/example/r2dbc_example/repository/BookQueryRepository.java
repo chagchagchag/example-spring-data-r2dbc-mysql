@@ -1,5 +1,8 @@
 package io.chagchagchag.example.r2dbc_example.repository;
 
+import io.chagchagchag.example.r2dbc_example.repository.entity.Book;
+import io.chagchagchag.example.r2dbc_example.repository.type.SaleStatus;
+import io.chagchagchag.example.r2dbc_example.repository.valueobject.BookAuthor;
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.repository.reactive.ReactiveSortingRepository;
