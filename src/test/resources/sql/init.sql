@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS example.book
     name         varchar(30) not null,
     price        bigint      null,
     published_at datetime    null,
-    sale_status  varchar(11) not null,
+    sale_status  varchar(20) not null,
     author_id    bigint      not null
 ) default character set utf8 collate utf8_general_ci;
 
