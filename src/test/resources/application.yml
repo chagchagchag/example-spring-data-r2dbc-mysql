@@ -1,0 +1,8 @@
+logging:
+  level:
+    org.springframework.transaction.interceptor: TRACE
+    org.springframework.transaction.ReactiveTransactionManager: TRACE
+    org.springframework.transaction.reactive.TransactionalOperator: TRACE
+    org.springframework.transaction.reactive.TransactionSynchronizationManager: TRACE
+    org.springframework.transaction.reactive.TransactionCallback: TRACE
+    org.springframework.transaction.reactive.TransactionContextManager: TRACE

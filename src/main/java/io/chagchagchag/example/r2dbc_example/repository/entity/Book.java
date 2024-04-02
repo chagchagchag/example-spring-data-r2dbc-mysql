@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Table
@@ -21,7 +22,7 @@ public class Book {
   private BigDecimal price;
 //  @Column("published_at") // snake case 와 camel case 가 정확히 일치하면 생략 가능
   private LocalDateTime publishedAt;
-//  @Column("sale_status") // snake case 와 camel case 가 정확히 일치하면 생략 가능
+  @Column("sale_status") // snake case 와 camel case 가 정확히 일치하면 생략 가능
   private SaleStatus saleStatus;
   private Long authorId;
 }
