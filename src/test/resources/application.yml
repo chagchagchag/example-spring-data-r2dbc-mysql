@@ -1,8 +1,14 @@
 logging:
   level:
+    org.springframework.transaction.reactive: TRACE
     org.springframework.transaction.interceptor: TRACE
     org.springframework.transaction.ReactiveTransactionManager: TRACE
     org.springframework.transaction.reactive.TransactionalOperator: TRACE
+    org.springframework.transaction.reactive.TransactionalOperatorImpl: TRACE
     org.springframework.transaction.reactive.TransactionSynchronizationManager: TRACE
     org.springframework.transaction.reactive.TransactionCallback: TRACE
     org.springframework.transaction.reactive.TransactionContextManager: TRACE
+    io.asyncer.r2dbc.mysql.QUERY: trace
+    io.asyncer.r2dbc.mysql.MySqlConnection: trace
+#    io.asyncer.r2dbc.mysql.client: trace
+    org.springframework.r2dbc.connection.R2dbcTransactionManager: TRACE
