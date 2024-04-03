@@ -4,6 +4,7 @@ import io.asyncer.r2dbc.mysql.MySqlConnectionConfiguration;
 import io.asyncer.r2dbc.mysql.MySqlConnectionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.r2dbc.core.R2dbcEntityTemplate;
 import org.springframework.r2dbc.connection.R2dbcTransactionManager;
 import org.springframework.r2dbc.connection.init.ConnectionFactoryInitializer;
 import org.springframework.r2dbc.connection.init.ResourceDatabasePopulator;
@@ -36,6 +37,13 @@ public class R2dbcMySqlConfig {
     ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
     initializer.setDatabasePopulator(populator);
     return initializer;
+  }
+
+  @Bean
+  public R2dbcEntityTemplate r2dbcEntityTemplate(
+      MySqlConnectionFactory connectionFactory
+  ){
+    return new R2dbcEntityTemplate(connectionFactory);
   }
 
 }
